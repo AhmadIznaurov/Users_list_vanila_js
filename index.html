@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="main-wrapper">
+
+<h1>Список пользователей</h1>
+<header class="header-input">
+  <div class="input">
+    <img src="img/source.svg" alt="sourse">
+    <input type="text" name="text" id="id" placeholder="Поиск по имени или e-mail">
+  </div>
+  <div class="main-cleaner">
+    <div class="img-cleaner">
+        <img src="img/clean.svg" alt="cleaner">
+    </div>
+    <div class="clean-filter">Очистить фильтр</div>
+  </div>
+</header>
+<div class="pagination"></div>
+<div class="button-content button">
+<div class="button-content">
+  <button>Сортировка:</button>
+  <button>Дата регистрации</button>
+  <button>Рейтинг</button>
+</div>
+<table id="table-body">
+  <tr id="table-row">
+    <th id="user-name">Имя пользователя</th>
+    <th id="user-email">E-mail</th>
+    <th id="registration-date">Дата регистрации</th>
+    <th id="rating">Рейтинг</th>
+  </tr>
+</table>
+<div class="table-img" width="14">
+   <button id="delete-button"> 
+    <img src="img/delete.svg" alt="deleting">
+  </button>
+</div>
+</div>
+</div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
